@@ -27,6 +27,6 @@ echo Next version: $NEXT_VER
 
 # タグの付与とプッシュ
 git tag $NEXT_VER
-git push origin $NEXT_VER
+git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git" $NEXT_VER
 
 exit 0
