@@ -10,9 +10,9 @@ if [ -z "$CURRENT_VER" ]; then
     MINOR=0
     REVISION=0
 else
-    MAJOR=$(echo $CURRENT_VER | gsed -e 's/v\([0-9]\+\).\([0-9]\+\).\([0-9]\+\)/\1/g')
-    MINOR=$(echo $CURRENT_VER | gsed -e 's/v\([0-9]\+\).\([0-9]\+\).\([0-9]\+\)/\2/g')
-    REVISION=$(echo $CURRENT_VER | gsed -e 's/v\([0-9]\+\).\([0-9]\+\).\([0-9]\+\)/\3/g')
+    MAJOR=$(echo $CURRENT_VER | sed -e 's/v\([0-9]\+\).\([0-9]\+\).\([0-9]\+\)/\1/g')
+    MINOR=$(echo $CURRENT_VER | sed -e 's/v\([0-9]\+\).\([0-9]\+\).\([0-9]\+\)/\2/g')
+    REVISION=$(echo $CURRENT_VER | sed -e 's/v\([0-9]\+\).\([0-9]\+\).\([0-9]\+\)/\3/g')
 fi
 
 # バージョンをインクリメント
