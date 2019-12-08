@@ -18,9 +18,18 @@ fi
 # バージョンをインクリメント
 # オプションの指定がない場合、オプション誤りの場合はリビジョンを更新する
 case "$INPUT_WHAT_TO_UPDATE" in
-    "major" ) MAJOR=$((MAJOR + 1)) ;;
-    "minor" ) MINOR=$((MINOR + 1)) ;;
-    * ) REVISION=$((REVISION + 1)) ;;
+    "major" )
+        MAJOR=$((MAJOR + 1))
+        MINOR=0
+        REVISION=0
+        ;;
+    "minor" )
+        MINOR=$((MINOR + 1))
+        REVISION=0
+        ;;
+    * )
+        REVISION=$((REVISION + 1))
+        ;;
 esac
 NEXT_VER=v$MAJOR.$MINOR.$REVISION
 echo Next version: $NEXT_VER
