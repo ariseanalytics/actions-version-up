@@ -1,5 +1,5 @@
-name: Tag
-description: Update git tags
+name: Version up
+description: Update git tag version
 inputs:
   what-to-update:
     description: 'What to update'
