@@ -19,4 +19,4 @@ env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
 ```
 
-Please refer to [example workflows](https://github.com/koirand/github-action-tag/tree/master/.github/workflows).
+Please refer to [example workflows](https://github.com/koirand/actions-version-up/tree/master/.github/workflows).
