@@ -2,7 +2,7 @@ name: Update revision
 
 on:
   push:
-    branches-ignore::
+    branches-ignore:
       - release
       - master
 
