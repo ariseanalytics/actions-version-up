@@ -17,7 +17,7 @@ fi
 
 # バージョンをインクリメント
 # オプションの指定がない場合、オプション誤りの場合はリビジョンを更新する
-case "$1" in
+case "$INPUT_WHAT_TO_UPDATE" in
     "major" ) MAJOR=$((MAJOR + 1)) ;;
     "minor" ) MINOR=$((MINOR + 1)) ;;
     * ) REVISION=$((REVISION + 1)) ;;

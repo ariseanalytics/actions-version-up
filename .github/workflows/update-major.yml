@@ -13,6 +13,6 @@ jobs:
     - uses: actions/checkout@v1
     - uses: koirand/github-action-tag@master
       with:
-        what-to-update: major
+        WHAT_TO_UPDATE: major
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

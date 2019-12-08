@@ -1,4 +1,4 @@
-name: Update major version
+name: Update minor version
 
 on:
   push:
@@ -13,6 +13,6 @@ jobs:
     - uses: actions/checkout@v1
     - uses: koirand/github-action-tag@master
       with:
-        what-to-update: minor
+        WHAT_TO_UPDATE: minor
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
