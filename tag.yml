@@ -1,0 +1,12 @@
+name: Tag
+description: Update git tags
+
+on:
+  push:
+    branches:
+      - master
+
+runs:
+  using: docker
+  image: Dockerfile
+

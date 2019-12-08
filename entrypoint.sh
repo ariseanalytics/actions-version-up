@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/sh -e
 
 # 現在のバージョンの取得
 CURRENT_VER=$(git tag | head -n 1)
