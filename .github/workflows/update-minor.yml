@@ -1,4 +1,4 @@
-name: Update minor version
+name: Update revision
 
 on:
   push:
