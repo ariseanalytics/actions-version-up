@@ -1,9 +1,9 @@
-name: Update Tag
+name: Update major version
 
 on:
   push:
     branches:
-      - master
+      - release
 
 jobs:
   tag:
@@ -12,6 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: koirand/github-action-tag@master
+      with:
+        what-to-update: major
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-

@@ -1,12 +1,12 @@
 name: Tag
 description: Update git tags
-
-on:
-  push:
-    branches:
-      - master
-
+inputs:
+  what-to-update:
+    description: 'What to update'
+    required: true
+    default: 'revision'
 runs:
   using: docker
   image: Dockerfile
-
+  args:
+    - ${{ inputs.what-to-update }}
