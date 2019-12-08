@@ -1,7 +1,7 @@
 #!/bin/sh -e
 
 # 現在のバージョンの取得
-CURRENT_VER=$(git tag | head -n 1)
+CURRENT_VER=$(git describe --tags | sed -e 's/\(v[0-9]\+.[0-9]\+.[0-9]\+\).*/\1/g')
 echo Current version: $CURRENT_VER
 
 # バージョンがない場合(タグがない場合) v0.0.0 をセット
