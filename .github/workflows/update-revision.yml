@@ -2,9 +2,8 @@ name: Update revision
 
 on:
   push:
-    branches-ignore:
-      - release
-      - master
+    branches:
+      - develop
 
 jobs:
   tag:
