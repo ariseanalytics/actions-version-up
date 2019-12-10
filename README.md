@@ -5,11 +5,11 @@ GitHub Actions for updating Git tag version.
 
 ## Inputs
 
-### `WHAT_TO_UPDATE`
+### `what_to_update`
 
 Select what to update `major` or `minor` or `revision`(Default).
 
-|WAT_TO_UPDATE|TAG|
+|what_to_update|tag example|
 |---|---|
 |major|v1.2.3 --> v2.0.0|
 |minor|v1.2.3 --> v1.3.0|
@@ -22,9 +22,9 @@ If you haven't tagged yet, v0.0.1 will be added.
 ```yml
 uses: koirand/github-action-tag@master
 with:
-  WHAT_TO_UPDATE: major
+  what_to_update: major
 env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
+  github_token: ${{ secrets.GITHUB_TOKEN }
 ```
 
 Please refer to [example workflows](https://github.com/koirand/actions-version-up/tree/master/.github/workflows).
