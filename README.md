@@ -24,7 +24,7 @@ uses: koirand/github-action-tag@master
 with:
   what_to_update: major
 env:
-  github_token: ${{ secrets.GITHUB_TOKEN }
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
 ```
 
 Please refer to [example workflows](https://github.com/koirand/actions-version-up/tree/master/.github/workflows).

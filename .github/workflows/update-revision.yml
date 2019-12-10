@@ -15,4 +15,4 @@ jobs:
       with:
         what_to_update: revision
       env:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
